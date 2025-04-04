@@ -1,0 +1,56 @@
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .section-row {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .section-half {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .black {
+      background-color: black;
+      color: white;
+    }
+
+    .white {
+      background-color: white;
+      color: black;
+    }
+
+    .section-pair-vertical {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .section-half-vertical {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .section-E {
+      background-color: black;
+      color: white;
+    }
+
+    .section-F {
+      background-color: white;
+      color: black;
+    }

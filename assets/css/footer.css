@@ -9,3 +9,41 @@ footer {
 footer p {
   margin: 0.5rem 0;
 }
+
+
+#bottom-footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left {
+  background-color: black;
+}
+
+.footer-right {
+  background-color: white;
+}
+
+.footer-left p {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-right p {
+  color: black;
+  margin: 0;
+  font-size: 0.9rem;
+}
