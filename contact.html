@@ -12,24 +12,23 @@
 <body>
     <header>
             <!-- Navigation -->
-
-    <nav id="top-nav">
-        <div class="nav-left">
-            <a href="index.html">UNMASKED</a>
-            <a href="overview.html">OVERVIEW</a>
-            <a href="production.html">PRODUCTION</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="contact.html">CONTACT</a> <!-- Link ka homepage za ENG -->
-        </div>
-        <div class="nav-right">
-            <a href="index.html">DÉMASQUÉ</a>
-            <a href="overview.html">OVERVIEW</a>
-            <a href="production.html">PRODUCTION</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="contact.html">CONTACT</a> <!-- Link ka homepage za FRA -->
-        </div>
-    </nav>
-    </header>
+                <nav id="top-nav">
+                    <div class="nav-left">
+                        <a href="index.html">UNMASKED</a>
+                        <a href="overview.html">OVERVIEW</a>
+                        <a href="production.html">PRODUCTION</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="contact.html">CONTACT</a> <!-- Link ka homepage za ENG -->
+                    </div>
+                    <div class="nav-right">
+                        <a href="index.html">DÉMASQUÉ</a>
+                        <a href="overview.html">OVERVIEW</a>
+                        <a href="production.html">PRODUCTION</a>
+                        <a href="gallery.html">GALLERY</a>
+                        <a href="contact.html">CONTACT</a> <!-- Link ka homepage za FRA -->
+                    </div>
+                </nav>
+        </header>
 
     <main>
         <section class="curtain-wrapper reveal-left">
@@ -37,26 +36,33 @@
             <div class="text-wrapper">
               <!-- Tvoj sadržaj ovdje -->
 
-          
-        <section id="section-contact" class="contact-section">
-            <section id="section-contact" class="contact-section">
-                <div class="container">
-                    <div class="contact-left">
-                        <h1>Contact Us</h1>
-                        <form action="https://your-netlify-form-endpoint" method="POST" class="contact-form">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-            
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-            
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-            
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </form>
-                    </div>
-            
+                    <section id="section-contact" class="contact-section">
+                        <section id="section-contact" class="contact-section">
+                            <div class="container">
+                                <div class="contact-left">
+                                    <h1>Contact Us</h1>
+                                    <form action="https://your-netlify-form-endpoint" method="POST" class="contact-form">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                        
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required>
+                        
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" required></textarea>
+                        
+                                        <button type="submit" class="submit-btn">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+            </section>
+
+         <section class="curtain-wrapper reveal-right">
+            <div class="curtain-cover"></div>
+                <div class="text-wrapper">
+                  <!-- FRA sadržaj -->
                     <div class="contact-right">
                         <h2>Follow Us</h2>
                         <div class="social-links">
@@ -67,11 +73,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            
+            </div>
         </section>
-    </div>
-</section>
+                      
     </main>
 
        <!-- Footer -->
@@ -85,9 +89,7 @@
       </footer>
       
 
-      <script src="assets//js/main"></script>
-      <script src="assets/js/nav"></script>
-      <script src="assets/js/animations.js"></script>
+      <script src="assets//js/main.js"></script>
 
 </body>
 </html>
