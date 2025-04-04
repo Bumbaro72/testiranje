@@ -370,3 +370,14 @@ nav a:hover::after {
   flex-direction: column;
   gap: 1.2rem;
 }
+
+/* Početno stanje - svi <p> su skoro nevidljivi */
+.text-wrapper p {
+  opacity: 0.1;
+  transition: opacity 0.8s ease;
+}
+
+/* Kada je miš preko roditeljskog wrappera */
+.text-wrapper:hover p {
+  opacity: 1;
+}
