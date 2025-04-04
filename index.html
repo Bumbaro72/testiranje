@@ -1,95 +1,132 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Stranica</title>
+    <title>Home</title>
     <style>
-        /* General reset */
-        * {
+        /* Global styling */
+        body {
+            font-family: 'Helvetica', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: sans-serif;
+            background-color: #fff;
+            overflow-x: hidden;
         }
 
+        /* Navigation */
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Section styling */
         section {
             display: flex;
             width: 100%;
-            height: 100vh;
-        }
-
-        .eng, .fra {
-            width: 50%;
-            height: 100%;
-        }
-
-        /* Raspored boja */
-        .eng {
-            background-color: black;
-            color: white;
-        }
-
-        .fra {
-            background-color: white;
-            color: black;
-        }
-
-        /* Specifična boja za E (crna ENG) i F (bela FRA) */
-        .eng.e { background-color: white; color: black; }
-        .fra.f { background-color: black; color: white; }
-
-        /* Sadržaj pozicioniranje */
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+            height: 100vh; /* Full viewport height */
             padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .right {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
             text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <section>
-        <div class="eng">
-            <div class="content">ENG - Section A</div>
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Overview</a>
+        <a href="#">Production</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Home Sections 1 -->
+    <section id="section-A">
+        <div class="left">
+            <h2>ENG - Home Section 1</h2>
+            <p>Content for the ENG home section 1 goes here.</p>
         </div>
-        <div class="fra">
-            <div class="content">FRA - Section B</div>
+        <div class="right">
+            <h2>FRA - Section 1 Accueil</h2>
+            <p>Contenu de la section FRA 1 ici.</p>
         </div>
     </section>
 
-    <section>
-        <div class="eng">
-            <div class="content">ENG - Section C</div>
+    <!-- Home Sections 2 -->
+    <section id="section-B">
+        <div class="left">
+            <h2>ENG - Home Section 2</h2>
+            <p>Content for the ENG home section 2 goes here.</p>
         </div>
-        <div class="fra">
-            <div class="content">FRA - Section D</div>
-        </div>
-    </section>
-
-    <section>
-        <div class="eng e">
-            <div class="content">ENG - Section E</div>
-        </div>
-        <div class="fra f">
-            <div class="content">FRA - Section F</div>
+        <div class="right">
+            <h2>FRA - Section 2 Accueil</h2>
+            <p>Contenu de la section FRA 2 ici.</p>
         </div>
     </section>
 
-    <section>
-        <div class="eng">
-            <div class="content">ENG - Section G</div>
+    <!-- Home Sections 3 -->
+    <section id="section-C">
+        <div class="left">
+            <h2>ENG - Home Section 3</h2>
+            <p>Content for the ENG home section 3 goes here.</p>
         </div>
-        <div class="fra">
-            <div class="content">FRA - Section H</div>
+        <div class="right">
+            <h2>FRA - Section 3 Accueil</h2>
+            <p>Contenu de la section FRA 3 ici.</p>
         </div>
     </section>
+
+    <!-- Home Sections 4 (New Section D) -->
+    <section id="section-D">
+        <div class="left">
+            <h2>ENG - Home Section 4</h2>
+            <p>Content for the ENG home section 4 goes here.</p>
+        </div>
+        <div class="right">
+            <h2>FRA - Section 4 Accueil</h2>
+            <p>Contenu de la section FRA 4 ici.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Unmasked Documentary. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
