@@ -32,38 +32,39 @@
     </header>
 
     <main>
-        <!-- Section A (ENG) -->
-        <section id="section-a" class="split-section">
-            <div class="eng">
-                <h2>Contact Us</h2>
-                <form name="contact-form" method="POST" data-netlify="true">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-
-            <!-- Section B (FRA) - Placeholder for social media links and action -->
-            <div class="fra">
-                <h2>Suivez-nous</h2>
-                <p>Restons connectés! Suivez nos dernières actualités et moments exclusifs sur les réseaux sociaux.</p>
-                <ul class="social-links">
-                    <li><a href="https://instagram.com/film">Instagram</a></li>
-                    <li><a href="https://twitter.com/film">Twitter</a></li>
-                    <li><a href="https://facebook.com/film">Facebook</a></li>
-                </ul>
-                <h3>Stay updated!</h3>
-                <p>Join our mailing list for behind-the-scenes content and updates on the film.</p>
-                <button>Join the list</button>
-            </div>
+        <section id="section-contact" class="contact-section">
+            <section id="section-contact" class="contact-section">
+                <div class="container">
+                    <div class="contact-left">
+                        <h1>Contact Us</h1>
+                        <form action="https://your-netlify-form-endpoint" method="POST" class="contact-form">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+            
+                    <div class="contact-right">
+                        <h2>Follow Us</h2>
+                        <div class="social-links">
+                            <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </section>
+        
     </main>
 
        <!-- Footer -->

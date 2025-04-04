@@ -15,3 +15,270 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* General reset, uključujući sve margine, paddinge, i box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Osiguraj da ni body ni html nemaju margine */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* NAVIGATION */
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.nav-left {
+  background-color: black;
+}
+
+.nav-left a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.nav-right {
+  background-color: white;
+}
+
+.nav-right a {
+  color: black;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+/* OVERVIEW SECTION */
+#overview {
+  display: flex;
+  height: 100vh;
+}
+
+.half {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background-color: #fff;
+  color: black;
+}
+
+.white {
+  background-color: black;
+  color: white;
+}
+
+/* SPLIT SECTIONS */
+.split-section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.half {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+.video-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-section.black {
+  background-color: black;
+}
+
+.video-section.white {
+  background-color: white;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 0;                 /* 🔥 nema razmaka među kockama */
+  padding: 0;             /* ❌ uklanja unutarnji razmak */
+  margin: 0;              /* ❌ uklanja vanjski razmak */
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  margin: 0;
+}
+
+
+.photo.black {
+  background-color: black;
+}
+
+.photo.white {
+  background-color: white;
+}
+
+/* Kontakt sekcija */
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 20px;
+  background-color: #fff;
+  height: 100%;
+  min-height: 100vh; /* Footer se pozicionira na dnu */
+  position: relative;
+}
+
+.contact-section .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-left, .contact-right {
+  width: 48%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-left {
+  background-color: #fff; /* Bijela pozadina za lijevi dio */
+  color: #000;
+}
+
+.contact-right {
+  background-color: #000; /* Crna pozadina za desni dio */
+  color: #fff;
+}
+
+.contact-left h1, .contact-right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  background-color: transparent; /* Bez pozadinske boje u formi */
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #000; /* Sivi okvir na inputima */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: transparent; /* Bez pozadinske boje */
+  color: #000;
+  border: 1px solid #000; /* Okvir oko dugmeta */
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #fff; /* Bijela za crnu pozadinu */
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ccc;
+}
+
+/* Footer stretch to the bottom */
+footer {
+  margin-top: auto; /* Gura footer prema dnu stranice */
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
