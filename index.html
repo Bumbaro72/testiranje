@@ -62,18 +62,76 @@
             position: relative;
             width: 100%;
         }
+/* Osnovni stil */
+#top-nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+}
+
+/* Lijeva navigacija (ENG) */
+.nav-left {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Desna navigacija (FRA) */
+.nav-right {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.nav-right a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Hover efekti */
+
     </style>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Overview</a>
-        <a href="#">Production</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
-    </nav>
+
+    <nav id="top-nav">
+      <div class="nav-left">
+          <a href="index.html">UNMASKED</a>
+          <a href="overview.html">OVERVIEW</a>
+          <a href="production.html">PRODUCTION</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html">CONTACT</a> <!-- Link ka homepage za ENG -->
+      </div>
+      <div class="nav-right">
+          <a href="index.html">DÉMASQUÉ</a>
+          <a href="overview.html">OVERVIEW</a>
+          <a href="production.html">PRODUCTION</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html">CONTACT</a> <!-- Link ka homepage za FRA -->
+      </div>
+  </nav>
 
     <!-- Home Sections 1 -->
     <section id="section-A">
@@ -125,8 +183,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Unmasked Documentary. All rights reserved.</p>
-    </footer>
+      <p>&copy; 2025 Unmasked Documentary. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
