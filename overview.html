@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview - Unmasked Documentary</title>
+  <style>
+    /* Osnovna stilizacija za Overview */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 50px 10%;
+      box-sizing: border-box;
+      height: auto; /* Omogućuje skrolanje */
+      overflow-y: auto;
+    }
+
+    .content-left, .content-right {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .content-left {
+      background-color: black;
+      color: white;
+    }
+
+    .content-right {
+      background-color: white;
+      color: black;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    section + section {
+      margin-top: 50px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1>Unmasked Documentary</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="overview.html">Overview</a>
+    <a href="production.html">Production</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Overview Content -->
+  <section id="section-primary">
+    <div class="content-left">
+      <h2>Synopsis</h2>
+      <p>Ovdje ide tekstualni sadržaj na ENG jeziku.</p>
+    </div>
+    <div class="content-right">
+      <h2>Synopsis</h2>
+      <p>Ovdje ide tekstualni sadržaj na FRA jeziku.</p>
+    </div>
+  </section>
+
+  <section id="section-secondary">
+    <div class="content-left">
+      <h2>Treatment</h2>
+      <p>Detalji o filmu na ENG jeziku.</p>
+    </div>
+    <div class="content-right">
+      <h2>Treatment</h2>
+      <p>Detalji o filmu na FRA jeziku.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Unmasked Documentary. All rights reserved.</p>
+    <p><a href="https://bumbaro72.github.io/unmasked/">Visit our GitHub</a></p>
+  </footer>
+
+</body>
+</html>
