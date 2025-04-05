@@ -369,6 +369,7 @@ nav a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  z-index: 5;
 }
 
 /* Početno stanje - svi <p> su skoro nevidljivi */
@@ -408,4 +409,32 @@ nav a:hover::after {
 
 .curtain-wrapper.reveal-vertical .curtain-cover.revealed {
   transform: translateY(-100%);
+}
+
+.curtain-wrapper {
+  position: relative;
+  z-index: 1; /* Osigurava da sam wrapper bude ispod */
+}
+
+.curtain-cover {
+  position: absolute;
+  z-index: 2; /* Prvi poklopac treba biti na vrhu */
+}
+
+.curtain-cover.second {
+  z-index: 1; /* Drugi poklopac treba biti ispod prvog, ali i dalje ispod "content-a" */
+}
+
+.curtain-wrapper {
+  padding-bottom: 5vh; /* Malo prostora između sekcija */
+}
+
+.curtain-cover.left {
+  transform: translateX(-100%); /* Pomaknut je ulijevo, izvan ekrana */
+  transition: transform 1s ease;
+}
+
+.curtain-cover.right {
+  transform: translateX(100%); /* Pomaknut je udesno, izvan ekrana */
+  transition: transform 1s ease;
 }
